@@ -35,4 +35,5 @@ if __name__ == '__main__':
         # lines will be a list of new lines added at the end
         print(lines)
         for message in lines:
-            tb.send_message(CHAT_ID, message)
+            if message:
+                tb.send_message(CHAT_ID, message)
