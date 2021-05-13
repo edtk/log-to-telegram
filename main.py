@@ -33,7 +33,7 @@ if __name__ == '__main__':
     x = log_generator(FILE_PATH)
     for lines in x:
         # lines will be a list of new lines added at the end
-        print(lines)
+        # print(lines)
         for message in lines:
             if message:
                 tb.send_message(CHAT_ID, message)
